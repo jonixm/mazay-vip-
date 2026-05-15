@@ -4,14 +4,17 @@
 <head>
   <base target="_top">
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
-    *, *::before, *::after {
+    *,
+    *::before,
+    *::after {
       box-sizing: border-box !important;
     }
 
@@ -300,9 +303,9 @@
     }
 
     /* Карточки модалок — тоже простой блок, без ограничений высоты */
-    body.in-iframe #confirmModal > div:last-child,
-    body.in-iframe #successModal > div:last-child,
-    body.in-iframe #manageModal > div:last-child {
+    body.in-iframe #confirmModal>div:last-child,
+    body.in-iframe #successModal>div:last-child,
+    body.in-iframe #manageModal>div:last-child {
       display: block !important;
       max-height: none !important;
       max-width: 100% !important;
@@ -331,6 +334,7 @@
       padding-right: 0.75rem !important;
       font-size: 0.95rem !important;
     }
+
     /* Ограничение ширины формы на десктопе (по центру, как раньше) */
     .card.max-w-2xl {
       max-width: 42rem !important;
@@ -341,7 +345,8 @@
 
 <body class="p-0 sm:p-4 md:p-8 text-slate-900" style="margin:0;padding:0;width:100%;max-width:100vw;overflow-x:hidden;">
 
-  <div class="max-w-2xl mx-auto card sm:rounded-[2.5rem] rounded-none overflow-hidden shadow-none sm:shadow-2xl" style="width:calc(100vw - 16px);max-width:42rem;overflow:hidden;margin:0 auto;">
+  <div class="max-w-2xl mx-auto card sm:rounded-[2.5rem] rounded-none overflow-hidden shadow-none sm:shadow-2xl"
+    style="width:calc(100vw - 16px);max-width:42rem;overflow:hidden;margin:0 auto;">
     <div class="emerald-gradient p-6 sm:p-10 md:p-12 text-center pb-20">
       <div class="text-4xl mb-4 drop-shadow-sm">🚣</div>
       <h1 class="text-xl md:text-2xl font-black text-white leading-tight uppercase tracking-widest drop-shadow-md">
@@ -349,7 +354,8 @@
       <p class="text-white font-bold text-[10px] mt-4 tracking-[0.4em] uppercase opacity-80 relative z-10">MAZAY SPLAV
       </p>
       <div class="wave">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" style="width:100%;max-width:100%;display:block;overflow:hidden;">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"
+          style="width:100%;max-width:100%;display:block;overflow:hidden;">
           <path
             d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C58.47,85.19,122.18,79.49,185.3,74.69c62.73-4.76,124.63-7.46,136.09-18.25Z"
             class="shape-fill"></path>
@@ -398,7 +404,8 @@
         <label class="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1 block">У вас установлен
           Telegram? *</label>
         <p class="text-[9px] text-slate-500 font-medium leading-relaxed mb-1">
-          Мы используем его для автоматической выдачи билетов. Если нет — ничего страшного, мы свяжемся с вами по телефону.
+          Мы используем его для автоматической выдачи билетов. Если нет — ничего страшного, мы свяжемся с вами по
+          телефону.
         </p>
         <div class="grid grid-cols-2 gap-4">
           <button type="button" id="tgYes" onclick="setTelegram('Да')"
@@ -647,7 +654,8 @@
         <div class="flex justify-between items-center pt-6 gap-2">
           <div class="min-w-0 flex-shrink">
             <p class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-1">К оплате</p>
-            <p id="totalSum" class="text-2xl sm:text-4xl font-black text-slate-900 tracking-tighter leading-none">0 BYN</p>
+            <p id="totalSum" class="text-2xl sm:text-4xl font-black text-slate-900 tracking-tighter leading-none">0 BYN
+            </p>
           </div>
           <button type="submit" id="mainSubmitBtn" disabled
             class="shrink-0 bg-slate-900 text-white px-5 sm:px-10 py-5 sm:py-6 rounded-3xl font-black uppercase tracking-widest text-[10px] sm:text-xs shadow-2xl active:scale-95 transition-all">
@@ -734,10 +742,12 @@
     <div class="bg-white relative w-full max-w-lg rounded-[3rem] shadow-2xl overflow-hidden max-h-[95vh] flex flex-col">
       <div class="bg-emerald-500 p-6 text-center text-white space-y-1">
         <div class="text-4xl">🚣</div>
-        <h2 class="text-2xl font-black uppercase tracking-normal" style="word-spacing: 0.15rem;">спасибо, что оставили заявку на сплав</h2>
+        <h2 class="text-2xl font-black uppercase tracking-normal" style="word-spacing: 0.15rem;">спасибо, что оставили
+          заявку на сплав</h2>
         <p class="text-[10px] font-bold uppercase tracking-widest flash-text leading-relaxed">
           📸 Сделайте скриншот!<br>
-          <span class="text-[8px] opacity-100 mt-1 block">Вы всегда можете найти свою заявку на сплавы, введя в форму свой
+          <span class="text-[8px] opacity-100 mt-1 block">Вы всегда можете найти свою заявку на сплавы, введя в форму
+            свой
             номер телефона.</span>
         </p>
         <div
@@ -814,7 +824,7 @@
   <script>
     // Определяем, находимся ли мы в iframe (для iOS fix модальных окон)
     var isInIframe = false;
-    try { isInIframe = window.self !== window.top; } catch(e) { isInIframe = true; }
+    try { isInIframe = window.self !== window.top; } catch (e) { isInIframe = true; }
     if (isInIframe) {
       document.body.classList.add('in-iframe');
     }
@@ -826,14 +836,14 @@
         document.documentElement.scrollTop = 0;
         document.body.scrollTop = 0;
         // Повторяем прокрутку с задержкой — iOS игнорирует первый вызов в iframe
-        setTimeout(function() {
+        setTimeout(function () {
           window.scrollTo(0, 0);
           document.documentElement.scrollTop = 0;
           document.body.scrollTop = 0;
           var visibleModal = document.querySelector('#confirmModal:not(.hidden), #manageModal:not(.hidden), #successModal:not(.hidden)');
           if (visibleModal) visibleModal.scrollIntoView({ behavior: 'auto', block: 'start' });
         }, 50);
-        setTimeout(function() {
+        setTimeout(function () {
           window.scrollTo(0, 0);
           var visibleModal = document.querySelector('#confirmModal:not(.hidden), #manageModal:not(.hidden), #successModal:not(.hidden)');
           if (visibleModal) visibleModal.scrollIntoView({ behavior: 'auto', block: 'start' });
@@ -850,7 +860,7 @@
 
     // === URL Google Apps Script (ЗАМЕНИТЕ на свой URL развёртывания!) ===
     // Динамическое определение URL скрипта
-    var SCRIPT_URL = window.location.href.includes('script.google.com') 
+    var SCRIPT_URL = window.location.href.includes('script.google.com')
       ? window.location.href.split('/exec')[0] + '/exec'
       : 'https://script.google.com/macros/s/AKfycbwFbxLR4WyZvgFRRBF8WPNDqh2T8eKuD7fKtHPeStYnequVd5rJdsbR3I0Ki_VRsKc8/exec';
 
@@ -859,8 +869,8 @@
       if (typeof google !== 'undefined' && google.script && google.script.run) {
         // Native GAS call (faster and no CORS issues)
         google.script.run
-          .withSuccessHandler(function(res) { if (onSuccess) onSuccess(res); })
-          .withFailureHandler(function(err) { if (onError) onError(err); else console.error('API error:', err); })
+          .withSuccessHandler(function (res) { if (onSuccess) onSuccess(res); })
+          .withFailureHandler(function (err) { if (onError) onError(err); else console.error('API error:', err); })
           .apiHandler(action, params);
       } else {
         // External fetch call (for GitHub Pages etc.)
@@ -871,9 +881,9 @@
           }
         }
         fetch(url, { redirect: 'follow' })
-          .then(function(response) { return response.json(); })
-          .then(function(data) { if (onSuccess) onSuccess(data); })
-          .catch(function(err) { if (onError) onError(err); else console.error('API error:', err); });
+          .then(function (response) { return response.json(); })
+          .then(function (data) { if (onSuccess) onSuccess(data); })
+          .catch(function (err) { if (onError) onError(err); else console.error('API error:', err); });
       }
     }
 
@@ -882,19 +892,19 @@
     let isWaitlistMode = false;
 
     // СРАЗУ ЗАГРУЖАЕМ ДАТЫ (не ждем window.onload)
-    callApi('getDates', null, function(dates) {
-        allDates = dates;
-        const select = document.getElementById('date');
-        const placeholder = document.getElementById('datePlaceholder');
-        if (placeholder) placeholder.textContent = "Нажмите для выбора даты...";
-        while (select.options.length > 1) { select.remove(1); }
-        dates.forEach(d => {
-          const option = document.createElement('option');
-          option.value = `${d.date}_${d.time}_${d.route}`;
-          option.textContent = `${d.date} в ${d.time} — ${d.route}`;
-          select.appendChild(option);
-        });
-      }, function(err) { alert("ОШИБКА ЗАГРУЗКИ ДАТ: " + JSON.stringify(err)); });
+    callApi('getDates', null, function (dates) {
+      allDates = dates;
+      const select = document.getElementById('date');
+      const placeholder = document.getElementById('datePlaceholder');
+      if (placeholder) placeholder.textContent = "Нажмите для выбора даты...";
+      while (select.options.length > 1) { select.remove(1); }
+      dates.forEach(d => {
+        const option = document.createElement('option');
+        option.value = `${d.date}_${d.time}_${d.route}`;
+        option.textContent = `${d.date} в ${d.time} — ${d.route}`;
+        select.appendChild(option);
+      });
+    }, function (err) { alert("ОШИБКА ЗАГРУЗКИ ДАТ: " + JSON.stringify(err)); });
 
     function copyAndGo(id, url) {
       if (navigator.clipboard && navigator.clipboard.writeText) {
@@ -912,7 +922,7 @@
       if (validatePhoneUI()) {
         const phone = getFormattedPhone();
         document.getElementById('searchingBooking').classList.remove('hidden');
-        callApi('checkExistingBooking', { phone: phone, tripName: document.getElementById('date').value }, function(res) {
+        callApi('checkExistingBooking', { phone: phone, tripName: document.getElementById('date').value }, function (res) {
           document.getElementById('searchingBooking').classList.add('hidden');
           if (res.found) {
             existingBooking = res;
@@ -926,14 +936,14 @@
     function showManageModal(res) {
       const text = document.getElementById('existingBookingText');
       const backBtn = document.getElementById('manageBackBtn');
-      
+
       if (res.type === 'same_day') {
         text.innerHTML = `<span class="text-red-600 font-black uppercase text-xs">Внимание!</span><br>Вы уже забронированы на эту дату: <br><b>${res.date}</b><br><br><span class="text-red-500 font-black text-[11px] uppercase bg-red-50 p-4 rounded-2xl block border-2 border-red-100">Две брони на один день невозможны. Пожалуйста, свяжитесь с нами для уточнения.</span>`;
         if (backBtn) backBtn.classList.add('hidden');
         document.getElementById('managePaymentArea').classList.add('hidden');
         scrollToTopForModal();
         document.getElementById('manageModal').classList.remove('hidden');
-        return; 
+        return;
       } else {
         text.innerHTML = `Вы уже записаны на сплав <br><b>${res.date} в ${res.time}</b><br><br><span class="text-emerald-600 text-[10px] font-bold">Вы можете забронировать еще один сплав на другой день!</span>`;
         if (backBtn) backBtn.classList.remove('hidden');
@@ -945,7 +955,7 @@
           <div class="mt-4 p-5 bg-amber-50 border-2 border-amber-200 rounded-3xl text-center shadow-sm">
             <p class="text-[11px] font-black text-amber-600 uppercase mb-3 tracking-widest animate-pulse">⚠️ ВАЖНО: После перехода в Telegram нажмите кнопку START</p>
             <p class="text-[10px] font-bold text-slate-500 mb-4 leading-tight uppercase">Оплатите сейчас или позже, введя свой номер телефона в форму бронирования</p>
-            <a href="https://t.me/TEST_maz_bot?start=PAY_${res.bookingId}" target="_blank" 
+            <a href="https://t.me/splav_mazay_bot?start=PAY_${res.bookingId}" target="_blank" 
                class="flex items-center justify-center w-full p-5 rounded-2xl bg-amber-500 text-white font-black uppercase text-[10px] tracking-widest shadow-lg active:scale-95 transition-all">
                ОПЛАТИТЬ В TELEGRAM
             </a>
@@ -1007,7 +1017,7 @@
           </div>
         `;
         var payBtn = document.createElement('a');
-        payBtn.href = 'https://t.me/TEST_maz_bot?start=PAY_' + bId;
+        payBtn.href = 'https://t.me/splav_mazay_bot?start=PAY_' + bId;
         payBtn.target = '_blank';
         payBtn.className = 'flex items-center justify-center w-full p-5 rounded-2xl bg-amber-500 text-white font-black uppercase text-[10px] tracking-widest shadow-lg active:scale-95 transition-all';
         payBtn.textContent = 'ОПЛАТИТЬ В TELEGRAM';
@@ -1028,7 +1038,7 @@
       const btn = document.getElementById('cancelBtn');
       btn.disabled = true;
       btn.textContent = "ОТМЕНЯЕМ...";
-      callApi('cancelBooking', { phone: getFormattedPhone(), tripName: existingBooking.tripName }, function(res) {
+      callApi('cancelBooking', { phone: getFormattedPhone(), tripName: existingBooking.tripName }, function (res) {
         alert("Ваша бронь успешно отменена.");
         location.reload();
       });
@@ -1038,7 +1048,7 @@
       const btn = document.getElementById('rescheduleBtn');
       btn.disabled = true;
       btn.textContent = "ПОДОЖДИТЕ...";
-      callApi('cancelBooking', { phone: getFormattedPhone(), tripName: existingBooking.tripName }, function(res) {
+      callApi('cancelBooking', { phone: getFormattedPhone(), tripName: existingBooking.tripName }, function (res) {
         alert("Старая бронь удалена. Теперь вы можете выбрать новую дату.");
         existingBooking = null;
         hideManageModal();
@@ -1463,7 +1473,7 @@
         extraServices: document.getElementById('selectedExtra').value
       };
 
-      callApi('processBooking', { data: encodeURIComponent(JSON.stringify(formData)) }, function(res) {
+      callApi('processBooking', { data: encodeURIComponent(JSON.stringify(formData)) }, function (res) {
         hideConfirmModal();
         if (res.success) {
           const bookingId = res.bookingId || "ID_PENDING";
@@ -1562,8 +1572,8 @@
       <p class="text-sm font-bold text-slate-500 leading-relaxed">
         Похоже, ваш браузер блокирует защищенное соединение Google. Нажмите кнопку ниже, чтобы открыть форму напрямую.
       </p>
-      <a href="https://script.google.com/macros/s/AKfycbwFbxLR4WyZvgFRRBF8WPNDqh2T8eKuD7fKtHPeStYnequVd5rJdsbR3I0Ki_VRsKc8/exec" target="_blank" rel="noopener"
-        style="display:block; text-align:center; text-decoration:none;"
+      <a href="https://script.google.com/macros/s/AKfycbwFbxLR4WyZvgFRRBF8WPNDqh2T8eKuD7fKtHPeStYnequVd5rJdsbR3I0Ki_VRsKc8/exec"
+        target="_blank" rel="noopener" style="display:block; text-align:center; text-decoration:none;"
         class="w-full p-6 rounded-3xl bg-emerald-500 text-white font-black uppercase text-xs tracking-widest shadow-lg active:scale-95 transition-all">
         Открыть в браузере 🚀
       </a>
